@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Foreingwin2"
+             x:Class="Foreingwin2.MainPage">
+
+	<Label Text="Welcome to Xamarin Forms!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+    <StackLayout Padding="10,30,10,10">
+        <Label      Text="Cambio de Divisas" 
+                    HorizontalOptions="Center"
+                    FontSize="Large">
+        </Label>
+        <Label     
+            Text="Soles:" >
+        </Label>
+        <Entry 
+            x:Name="SolesEntry"
+            Placeholder="Ingrese el monto en Soles..."
+            PlaceholderColor="Black"
+            Keyboard="Numeric">
+        </Entry>
+
+        <Button 
+            x:Name="ConvertirButton"
+            Text="CONVERTIR" >
+        </Button>
+
+        <Label     
+            Text="Dolares:" >
+        </Label>
+
+        <Entry  
+                x:Name="DolaresEntry"
+                Placeholder="Monto en Dolares..."
+                PlaceholderColor="Black"
+                IsEnabled="false">
+        </Entry>
+
+        <Label     
+                Text="Euros:" >
+        </Label>
+        <Entry  
+                x:Name="EurosEntry"
+                Placeholder="Monto en Euros..."
+                PlaceholderColor="Black"
+                IsEnabled="false">
+        </Entry>
+
+        <Label     
+                Text="Libras:" >
+        </Label>
+        <Entry  
+                x:Name="LibrasEntry"
+                Placeholder="Monto en Libras..."
+                PlaceholderColor="Black"
+                IsEnabled="false">
+        </Entry>
+    </StackLayout>
+
+</ContentPage>
